@@ -79,7 +79,7 @@ dependencies:
   resolution_hints: {app_id: 4FGAXQOIJKTU36VN, name: BibliotekaB prijava, package_name: custom_signup}
   version: {branch: master}
 metadata: {description: Biblioteka, logo_img: 'asset:book.gif', title: Biblioteka}
-name: Clone of  BibliotekaB
+name: ' BibliotekaB1'
 package_name: Synagogue_Library
 runtime_options: {client_version: '3', server_spec: null, server_version: python3-sandbox, version: 2}
 services:
