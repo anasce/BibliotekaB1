@@ -32,17 +32,17 @@ class Edit(EditTemplate):
   def button_1_click(self, **event_args):
         """This method is called when the button is clicked"""
         new_knjiga = {
-            "Наслов": "",
-            "Аутори": "",
-            "Издавач": "",
+            "Naslov": "",
+            "Autori": "",
+            "Izdavac": "",
             "ISBN": "",
-            "Година": "",
-            "Количина": "",
-            "Рбр": "",
-            "Задужење": "",
-            "Полица": "",
-            "Напомена1": "",
-            "Напомена2": ""
+            "Godina": "",
+            "Kolicina": "",
+            "Rbr": "",
+            "Zaduzenje": "",
+            "Polica": "",
+            "Napomena1": "",
+            "Napomena2": ""
         }
         # Open an alert displaying the 'ArticleEdit' Form
         upis_traje = True

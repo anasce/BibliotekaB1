@@ -27,7 +27,7 @@ class ItemTemplate1(ItemTemplate1Template):
         # (which is the articles_panel on Homepage)
 
         result = alert(
-            content=f"Jeste li sigurni da želite da izbrišete  {self.item['Наслов']} {self.item['Аутори']} ?",
+            content=f"Jeste li sigurni da želite da izbrišete  {self.item['Naslov']} {self.item['Autori']} ?",
             buttons=[("Da", True), ("Ne", False)],
             #role="alert-greska",
         )

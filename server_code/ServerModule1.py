@@ -32,23 +32,23 @@ def search_records(tip_string,search_string):
     #return [r for r in list
             if search_string in r['Naslov'].lower()]
   elif  tip_string=="autor": 
-       return [r for r in app_tables.knjige.search(tables.order_by("Креирано", ascending=False))
-            if search_string in r['Аутори'].lower()]
+       return [r for r in app_tables.knjige.search(tables.order_by("Kreirano", ascending=False))
+            if search_string in r['Autori'].lower()]
   elif  tip_string=="ISBN": 
-       return [r for r in app_tables.knjige.search(tables.order_by("Креирано", ascending=False))
+       return [r for r in app_tables.knjige.search(tables.order_by("Kreirano", ascending=False))
             if search_string in r['ISBN'].lower()]   
   elif  tip_string=="izdavač": 
-       return [r for r in app_tables.knjige.search(tables.order_by("Креирано", ascending=False))
-            if search_string in r['Издавач'].lower()]     
+       return [r for r in app_tables.knjige.search(tables.order_by("Kreirano", ascending=False))
+            if search_string in r['Izdavac'].lower()]     
   elif  tip_string=="godina": 
-       return [r for r in app_tables.knjige.search(tables.order_by("Креирано", ascending=False))
-            if search_string in r['Година'].lower()]  
+       return [r for r in app_tables.knjige.search(tables.order_by("Kreirano", ascending=False))
+            if search_string in r['Godina'].lower()]  
   elif  tip_string=="polica": 
-       return [r for r in app_tables.knjige.search(tables.order_by("Креирано", ascending=False))
-            if search_string in r['Полица'].lower()] 
+       return [r for r in app_tables.knjige.search(tables.order_by("Kreirano", ascending=False))
+            if search_string in r['Polica'].lower()] 
   elif  tip_string=="početno slovo": 
-       return [r for r in app_tables.knjige.search(tables.order_by("Креирано", ascending=False))            
-            if  r['Наслов'].lower().startswith(search_string)] 
+       return [r for r in app_tables.knjige.search(tables.order_by("Kreirano", ascending=False))            
+            if  r['Naslov'].lower().startswith(search_string)] 
 @anvil.server.callable
 def uzmi_knjige():
     # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
@@ -64,12 +64,12 @@ def import_podataka(art_dict):
                 #name=art_dict["category"]
             #) 
     #art_dict["category"]=org_jed_za_dave    
-    art_dict["Креирано"]=datetime.now()
+    art_dict["Kreirano"]=datetime.now()
     app_tables.knjige.add_row(**art_dict) 
 
 @anvil.server.callable
 def dodaj_knjigu(knjiga_dict):         
-         app_tables.knjige.add_row(Креирано=datetime.now(), **knjiga_dict)
+         app_tables.knjige.add_row(Kreirano=datetime.now(), **knjiga_dict)
 
 @anvil.server.callable
 def izmjena_knjiga(knjiga, knjiga_dict):
