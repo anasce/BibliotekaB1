@@ -1,0 +1,77 @@
+components:
+- components:
+  - data_bindings:
+    - {code: 'self.item[''Наслов'']', property: text, writeback: false}
+    layout_properties: {grid_position: 'CLYQSI,NOUYEL'}
+    name: l_naslov
+    properties: {foreground: 'theme:Primary 700', text: ''}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''ISBN'']', property: text, writeback: false}
+    layout_properties: {grid_position: ''}
+    name: l_isbn
+    properties: {foreground: 'theme:Primary 700'}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''Аутори'']', property: text, writeback: false}
+    layout_properties: {grid_position: ''}
+    name: l_autori
+    properties: {foreground: 'theme:Primary 700', text: ''}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''Издавач'']', property: text, writeback: false}
+    layout_properties: {grid_position: ''}
+    name: l_izdavac
+    properties: {foreground: 'theme:Primary 700'}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''Година'']', property: text, writeback: false}
+    layout_properties: {grid_position: ''}
+    name: l_godina
+    properties: {foreground: 'theme:Primary 700'}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''Полица'']', property: text, writeback: false}
+    layout_properties: {grid_position: ''}
+    name: l_polica
+    properties: {foreground: 'theme:Primary 700'}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''Задужење'']', property: text, writeback: false}
+    layout_properties: {grid_position: ''}
+    name: l_zaduzenje
+    properties: {foreground: 'theme:Primary 700'}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''Количина'']', property: text, writeback: false}
+    layout_properties: {grid_position: ''}
+    name: l_kolicina
+    properties: {foreground: 'theme:Primary 700'}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''Напомена1'']', property: text, writeback: false}
+    layout_properties: {grid_position: ''}
+    name: l_napomena1
+    properties: {foreground: 'theme:Primary 700'}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''Рбр'']', property: text, writeback: false}
+    layout_properties: {grid_position: ''}
+    name: l_rbr
+    properties: {foreground: 'theme:Primary 700'}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''Напомена2'']', property: text, writeback: false}
+    layout_properties: {grid_position: ''}
+    name: l_napomena2
+    properties: {foreground: 'theme:Primary 700'}
+    type: Label
+  layout_properties: {grid_position: 'CVEYLZ,GGOLXS'}
+  name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+container:
+  data_bindings: []
+  properties: {background: '', role: elevated-card}
+  type: ColumnPanel
+is_package: true

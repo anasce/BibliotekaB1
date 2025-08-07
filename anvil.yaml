@@ -1,0 +1,302 @@
+allow_embedding: false
+correct_dependency_ids: {dep_ykcpnvdg9luv6: 4FGAXQOIJKTU36VN}
+db_schema:
+  knjige:
+    client: full
+    columns:
+    - admin_ui: {width: 200}
+      name: ISBN
+      type: string
+    - admin_ui: {width: 200}
+      name: Аутори
+      type: string
+    - admin_ui: {width: 200}
+      name: Година
+      type: string
+    - admin_ui: {width: 200}
+      name: Задужење
+      type: string
+    - admin_ui: {width: 200}
+      name: Издавач
+      type: string
+    - admin_ui: {width: 200}
+      name: Количина
+      type: string
+    - admin_ui: {width: 200}
+      name: Креирано
+      type: datetime
+    - admin_ui: {width: 200}
+      name: Креирање
+      type: datetime
+    - admin_ui: {width: 200}
+      name: Напомена1
+      type: string
+    - admin_ui: {width: 200}
+      name: Напомена2
+      type: string
+    - admin_ui: {width: 844}
+      name: Наслов
+      type: string
+    - admin_ui: {width: 200}
+      name: Полица
+      type: string
+    - admin_ui: {width: 200}
+      name: Рбр
+      type: string
+    - admin_ui: {width: 200}
+      name: напомена1
+      type: string
+    server: full
+    title: knjige
+  users:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: email
+      type: string
+    - admin_ui: {width: 200}
+      name: enabled
+      type: bool
+    - admin_ui: {width: 200}
+      name: last_login
+      type: datetime
+    - admin_ui: {width: 200}
+      name: password_hash
+      type: string
+    - admin_ui: {width: 200}
+      name: n_password_failures
+      type: number
+    - admin_ui: {width: 200}
+      name: confirmed_email
+      type: bool
+    - admin_ui: {width: 200}
+      name: link_key
+      type: string
+    server: full
+    title: Users
+dependencies:
+- dep_id: dep_ykcpnvdg9luv6
+  resolution_hints: {app_id: 4FGAXQOIJKTU36VN, name: BibliotekaB prijava, package_name: custom_signup}
+  version: {branch: master}
+metadata: {description: Biblioteka, logo_img: 'asset:book.gif', title: Biblioteka}
+name: Clone of  BibliotekaB
+package_name: Synagogue_Library
+runtime_options: {client_version: '3', server_spec: null, server_version: python3-sandbox, version: 2}
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+- client_config:
+    app_files:
+    - alternateLink: https://drive.google.com/file/d/1NzRRVRACiq4amyzRdI_DvzwH2Sj1zpDO/view?usp=drivesdk
+      appDataContents: false
+      capabilities: {canCopy: true, canEdit: true}
+      copyRequiresWriterPermission: false
+      copyable: true
+      createdDate: '2024-07-22T07:46:16.674Z'
+      downloadUrl: https://www.googleapis.com/drive/v2/files/1NzRRVRACiq4amyzRdI_DvzwH2Sj1zpDO?alt=media&source=downloadUrl
+      editable: true
+      embedLink: https://drive.google.com/file/d/1NzRRVRACiq4amyzRdI_DvzwH2Sj1zpDO/preview?usp=drivesdk
+      etag: '"MTcyMTYzNDM5MTgwMQ"'
+      explicitlyTrashed: false
+      fileExtension: py
+      fileSize: '1040'
+      headRevisionId: 0BxTv3FQi7YQhQjBJOGNOODNPM3FzSk4yR2UwZ0hMOTE3M2tVPQ
+      iconLink: https://drive-thirdparty.googleusercontent.com/16/type/text/x-python
+      id: 1NzRRVRACiq4amyzRdI_DvzwH2Sj1zpDO
+      kind: drive#file
+      labels: {hidden: false, restricted: false, starred: false, trashed: false, viewed: true}
+      lastModifyingUser:
+        displayName: Ана Шћепановић
+        emailAddress: ana.scepanovic57@gmail.com
+        isAuthenticatedUser: true
+        kind: drive#user
+        permissionId: '18283827943184681594'
+        picture: {url: 'https://lh3.googleusercontent.com/a/ACg8ocJ736_X-aVg7wPDhc252cCgda8ht7DHFQyykeDBORKE1gaICYtD=s64'}
+      lastModifyingUserName: Ана Шћепановић
+      lastViewedByMeDate: '2024-07-22T07:46:16.674Z'
+      markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
+      md5Checksum: c44b916173a3f3f88066c43532089801
+      mimeType: text/x-python
+      modifiedByMeDate: '2024-07-22T07:46:31.801Z'
+      modifiedDate: '2024-07-22T07:46:31.801Z'
+      originalFilename: Copy of main.py
+      ownerNames: [Ана Шћепановић]
+      owners:
+      - displayName: Ана Шћепановић
+        emailAddress: ana.scepanovic57@gmail.com
+        isAuthenticatedUser: true
+        kind: drive#user
+        permissionId: '18283827943184681594'
+        picture: {url: 'https://lh3.googleusercontent.com/a/ACg8ocJ736_X-aVg7wPDhc252cCgda8ht7DHFQyykeDBORKE1gaICYtD=s64'}
+      parents:
+      - {id: 1VFpVujgn_w2gfwizWD12CU_gWFlaD06_, isRoot: false, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/1VFpVujgn_w2gfwizWD12CU_gWFlaD06_', selfLink: 'https://www.googleapis.com/drive/v2/files/1NzRRVRACiq4amyzRdI_DvzwH2Sj1zpDO/parents/1VFpVujgn_w2gfwizWD12CU_gWFlaD06_'}
+      python_name: main_py
+      quotaBytesUsed: '1040'
+      selfLink: https://www.googleapis.com/drive/v2/files/1NzRRVRACiq4amyzRdI_DvzwH2Sj1zpDO
+      shared: false
+      spaces: [drive]
+      title: main.py
+      userPermission: {etag: '"TI42l3hwwGw40xdeNvBuG9bfMw4"', id: me, kind: drive#permission, pendingOwner: false, role: owner, selfLink: 'https://www.googleapis.com/drive/v2/files/1NzRRVRACiq4amyzRdI_DvzwH2Sj1zpDO/permissions/me', type: user}
+      version: '4'
+      webContentLink: https://drive.google.com/uc?id=1NzRRVRACiq4amyzRdI_DvzwH2Sj1zpDO&export=download
+      writersCanShare: true
+    - alternateLink: https://docs.google.com/spreadsheets/d/1QQYLCBFFBM3-F8gqGnqLgh8SadQ_nWAeqtSiNRHkh6c/edit?usp=drivesdk
+      appDataContents: false
+      capabilities: {canCopy: true, canEdit: true}
+      copyRequiresWriterPermission: false
+      copyable: true
+      createdDate: '2021-11-16T08:51:39.986Z'
+      editable: true
+      embedLink: https://docs.google.com/spreadsheets/d/1QQYLCBFFBM3-F8gqGnqLgh8SadQ_nWAeqtSiNRHkh6c/htmlembed?ouid=106138103603518009713
+      etag: '"MTYzNzA1NDI5MjgyMA"'
+      explicitlyTrashed: false
+      exportLinks: {application/pdf: 'https://docs.google.com/spreadsheets/export?id=1QQYLCBFFBM3-F8gqGnqLgh8SadQ_nWAeqtSiNRHkh6c&exportFormat=pdf', application/vnd.oasis.opendocument.spreadsheet: 'https://docs.google.com/spreadsheets/export?id=1QQYLCBFFBM3-F8gqGnqLgh8SadQ_nWAeqtSiNRHkh6c&exportFormat=ods', application/vnd.openxmlformats-officedocument.spreadsheetml.sheet: 'https://docs.google.com/spreadsheets/export?id=1QQYLCBFFBM3-F8gqGnqLgh8SadQ_nWAeqtSiNRHkh6c&exportFormat=xlsx', application/x-vnd.oasis.opendocument.spreadsheet: 'https://docs.google.com/spreadsheets/export?id=1QQYLCBFFBM3-F8gqGnqLgh8SadQ_nWAeqtSiNRHkh6c&exportFormat=ods', application/zip: 'https://docs.google.com/spreadsheets/export?id=1QQYLCBFFBM3-F8gqGnqLgh8SadQ_nWAeqtSiNRHkh6c&exportFormat=zip', text/csv: 'https://docs.google.com/spreadsheets/export?id=1QQYLCBFFBM3-F8gqGnqLgh8SadQ_nWAeqtSiNRHkh6c&exportFormat=csv', text/tab-separated-values: 'https://docs.google.com/spreadsheets/export?id=1QQYLCBFFBM3-F8gqGnqLgh8SadQ_nWAeqtSiNRHkh6c&exportFormat=tsv'}
+      fileSize: '112294'
+      iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.spreadsheet
+      id: 1QQYLCBFFBM3-F8gqGnqLgh8SadQ_nWAeqtSiNRHkh6c
+      kind: drive#file
+      labels: {hidden: false, restricted: false, starred: false, trashed: false, viewed: true}
+      lastModifyingUser:
+        displayName: Ана Шћепановић
+        emailAddress: ana.scepanovic57@gmail.com
+        isAuthenticatedUser: true
+        kind: drive#user
+        permissionId: '18283827943184681594'
+        picture: {url: 'https://lh3.googleusercontent.com/a/ACg8ocJ736_X-aVg7wPDhc252cCgda8ht7DHFQyykeDBORKE1gaICYtD=s64'}
+      lastModifyingUserName: Ана Шћепановић
+      lastViewedByMeDate: '2024-07-22T08:03:28.548Z'
+      markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
+      mimeType: application/vnd.google-apps.spreadsheet
+      modifiedByMeDate: '2021-11-16T09:18:12.820Z'
+      modifiedDate: '2021-11-16T09:18:12.820Z'
+      ownerNames: [Ана Шћепановић]
+      owners:
+      - displayName: Ана Шћепановић
+        emailAddress: ana.scepanovic57@gmail.com
+        isAuthenticatedUser: true
+        kind: drive#user
+        permissionId: '18283827943184681594'
+        picture: {url: 'https://lh3.googleusercontent.com/a/ACg8ocJ736_X-aVg7wPDhc252cCgda8ht7DHFQyykeDBORKE1gaICYtD=s64'}
+      parents:
+      - {id: 1VFpVujgn_w2gfwizWD12CU_gWFlaD06_, isRoot: false, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/1VFpVujgn_w2gfwizWD12CU_gWFlaD06_', selfLink: 'https://www.googleapis.com/drive/v2/files/1QQYLCBFFBM3-F8gqGnqLgh8SadQ_nWAeqtSiNRHkh6c/parents/1VFpVujgn_w2gfwizWD12CU_gWFlaD06_'}
+      python_name: rume
+      quotaBytesUsed: '112294'
+      selfLink: https://www.googleapis.com/drive/v2/files/1QQYLCBFFBM3-F8gqGnqLgh8SadQ_nWAeqtSiNRHkh6c
+      shared: false
+      spaces: [drive]
+      thumbnailLink: https://lh3.googleusercontent.com/drive-storage/AJQWtBPuI26no5Ol3JuDILcfVxrYYyVjsmKs3lmNGrEJ4zluCX-4Po7baghcsDjV4JA2GucfVnICGFr0wm2yupNLyMbPqBoqYAeAnCLI2EhywXO_MTV6D9xAm9AntX-A=s220
+      title: rume
+      userPermission: {etag: '"Rou6I33ai2R_1ILC8IDmLVfBPX0"', id: me, kind: drive#permission, pendingOwner: false, role: owner, selfLink: 'https://www.googleapis.com/drive/v2/files/1QQYLCBFFBM3-F8gqGnqLgh8SadQ_nWAeqtSiNRHkh6c/permissions/me', type: user}
+      version: '19'
+      writersCanShare: true
+    - alternateLink: https://docs.google.com/spreadsheets/d/1yZ_7FMDhKlfocD6Q3bVsoHPms52bDnWPu9344NtSv28/edit?usp=drivesdk
+      appDataContents: false
+      capabilities: {canCopy: true, canEdit: true}
+      copyRequiresWriterPermission: false
+      copyable: true
+      createdDate: '2024-10-07T11:33:24.253Z'
+      editable: true
+      embedLink: https://docs.google.com/spreadsheets/d/1yZ_7FMDhKlfocD6Q3bVsoHPms52bDnWPu9344NtSv28/htmlembed?ouid=106138103603518009713
+      etag: '"MTcyODMwMDk5OTM0MA"'
+      explicitlyTrashed: false
+      exportLinks: {application/pdf: 'https://docs.google.com/spreadsheets/export?id=1yZ_7FMDhKlfocD6Q3bVsoHPms52bDnWPu9344NtSv28&exportFormat=pdf', application/vnd.oasis.opendocument.spreadsheet: 'https://docs.google.com/spreadsheets/export?id=1yZ_7FMDhKlfocD6Q3bVsoHPms52bDnWPu9344NtSv28&exportFormat=ods', application/vnd.openxmlformats-officedocument.spreadsheetml.sheet: 'https://docs.google.com/spreadsheets/export?id=1yZ_7FMDhKlfocD6Q3bVsoHPms52bDnWPu9344NtSv28&exportFormat=xlsx', application/x-vnd.oasis.opendocument.spreadsheet: 'https://docs.google.com/spreadsheets/export?id=1yZ_7FMDhKlfocD6Q3bVsoHPms52bDnWPu9344NtSv28&exportFormat=ods', application/zip: 'https://docs.google.com/spreadsheets/export?id=1yZ_7FMDhKlfocD6Q3bVsoHPms52bDnWPu9344NtSv28&exportFormat=zip', text/csv: 'https://docs.google.com/spreadsheets/export?id=1yZ_7FMDhKlfocD6Q3bVsoHPms52bDnWPu9344NtSv28&exportFormat=csv', text/tab-separated-values: 'https://docs.google.com/spreadsheets/export?id=1yZ_7FMDhKlfocD6Q3bVsoHPms52bDnWPu9344NtSv28&exportFormat=tsv'}
+      fileSize: '11108'
+      iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.spreadsheet
+      id: 1yZ_7FMDhKlfocD6Q3bVsoHPms52bDnWPu9344NtSv28
+      kind: drive#file
+      labels: {hidden: false, restricted: false, starred: false, trashed: false, viewed: true}
+      lastModifyingUser:
+        displayName: Ана Шћепановић
+        emailAddress: ana.scepanovic57@gmail.com
+        isAuthenticatedUser: true
+        kind: drive#user
+        permissionId: '18283827943184681594'
+        picture: {url: 'https://lh3.googleusercontent.com/a/ACg8ocJ736_X-aVg7wPDhc252cCgda8ht7DHFQyykeDBORKE1gaICYtD=s64'}
+      lastModifyingUserName: Ана Шћепановић
+      lastViewedByMeDate: '2024-10-07T11:39:55.758Z'
+      markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
+      mimeType: application/vnd.google-apps.spreadsheet
+      modifiedByMeDate: '2024-10-07T11:36:39.340Z'
+      modifiedDate: '2024-10-07T11:36:39.340Z'
+      ownerNames: [Ана Шћепановић]
+      owners:
+      - displayName: Ана Шћепановић
+        emailAddress: ana.scepanovic57@gmail.com
+        isAuthenticatedUser: true
+        kind: drive#user
+        permissionId: '18283827943184681594'
+        picture: {url: 'https://lh3.googleusercontent.com/a/ACg8ocJ736_X-aVg7wPDhc252cCgda8ht7DHFQyykeDBORKE1gaICYtD=s64'}
+      parents:
+      - {id: 1VFpVujgn_w2gfwizWD12CU_gWFlaD06_, isRoot: false, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/1VFpVujgn_w2gfwizWD12CU_gWFlaD06_', selfLink: 'https://www.googleapis.com/drive/v2/files/1yZ_7FMDhKlfocD6Q3bVsoHPms52bDnWPu9344NtSv28/parents/1VFpVujgn_w2gfwizWD12CU_gWFlaD06_'}
+      permission: roclient
+      python_name: biblioteka
+      quotaBytesUsed: '11108'
+      selfLink: https://www.googleapis.com/drive/v2/files/1yZ_7FMDhKlfocD6Q3bVsoHPms52bDnWPu9344NtSv28
+      shared: false
+      spaces: [drive]
+      thumbnailLink: https://lh3.googleusercontent.com/drive-storage/AJQWtBMs_SfTpamshO31r0k9y8Jqk_nMgOWzlnkjtUiXsE-bem9zUyO0NdooOl4eHzo7uVTcaP7WVnU5wPVYvBdfiE39cbDixduwdv6-7EfIV90fE018ExZ0EwSLV6150w=s220
+      title: BIBLIOTEKA
+      userPermission: {etag: '"bToSdpbKQIo0NbzeVVHPUvEdeTM"', id: me, kind: drive#permission, pendingOwner: false, role: owner, selfLink: 'https://www.googleapis.com/drive/v2/files/1yZ_7FMDhKlfocD6Q3bVsoHPms52bDnWPu9344NtSv28/permissions/me', type: user}
+      version: '13'
+      writersCanShare: true
+    - alternateLink: https://docs.google.com/spreadsheets/d/1E6fzPDB0y3VMl0uiDKT89fDY17vZq5X9lwH2QfN6Dpk/edit?usp=drivesdk
+      appDataContents: false
+      capabilities: {canCopy: true, canEdit: true}
+      copyRequiresWriterPermission: false
+      copyable: true
+      createdDate: '2024-10-08T05:25:23.175Z'
+      editable: true
+      embedLink: https://docs.google.com/spreadsheets/d/1E6fzPDB0y3VMl0uiDKT89fDY17vZq5X9lwH2QfN6Dpk/htmlembed?ouid=106138103603518009713
+      etag: '"MTcyODM2NTE1NzE0NA"'
+      explicitlyTrashed: false
+      exportLinks: {application/pdf: 'https://docs.google.com/spreadsheets/export?id=1E6fzPDB0y3VMl0uiDKT89fDY17vZq5X9lwH2QfN6Dpk&exportFormat=pdf', application/vnd.oasis.opendocument.spreadsheet: 'https://docs.google.com/spreadsheets/export?id=1E6fzPDB0y3VMl0uiDKT89fDY17vZq5X9lwH2QfN6Dpk&exportFormat=ods', application/vnd.openxmlformats-officedocument.spreadsheetml.sheet: 'https://docs.google.com/spreadsheets/export?id=1E6fzPDB0y3VMl0uiDKT89fDY17vZq5X9lwH2QfN6Dpk&exportFormat=xlsx', application/x-vnd.oasis.opendocument.spreadsheet: 'https://docs.google.com/spreadsheets/export?id=1E6fzPDB0y3VMl0uiDKT89fDY17vZq5X9lwH2QfN6Dpk&exportFormat=ods', application/zip: 'https://docs.google.com/spreadsheets/export?id=1E6fzPDB0y3VMl0uiDKT89fDY17vZq5X9lwH2QfN6Dpk&exportFormat=zip', text/csv: 'https://docs.google.com/spreadsheets/export?id=1E6fzPDB0y3VMl0uiDKT89fDY17vZq5X9lwH2QfN6Dpk&exportFormat=csv', text/tab-separated-values: 'https://docs.google.com/spreadsheets/export?id=1E6fzPDB0y3VMl0uiDKT89fDY17vZq5X9lwH2QfN6Dpk&exportFormat=tsv'}
+      fileSize: '10786'
+      iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.spreadsheet
+      id: 1E6fzPDB0y3VMl0uiDKT89fDY17vZq5X9lwH2QfN6Dpk
+      kind: drive#file
+      labels: {hidden: false, restricted: false, starred: false, trashed: false, viewed: true}
+      lastModifyingUser:
+        displayName: Ана Шћепановић
+        emailAddress: ana.scepanovic57@gmail.com
+        isAuthenticatedUser: true
+        kind: drive#user
+        permissionId: '18283827943184681594'
+        picture: {url: 'https://lh3.googleusercontent.com/a/ACg8ocJ736_X-aVg7wPDhc252cCgda8ht7DHFQyykeDBORKE1gaICYtD=s64'}
+      lastModifyingUserName: Ана Шћепановић
+      lastViewedByMeDate: '2024-10-08T05:25:23.175Z'
+      markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
+      mimeType: application/vnd.google-apps.spreadsheet
+      modifiedByMeDate: '2024-10-08T05:25:57.144Z'
+      modifiedDate: '2024-10-08T05:25:57.144Z'
+      ownerNames: [Ана Шћепановић]
+      owners:
+      - displayName: Ана Шћепановић
+        emailAddress: ana.scepanovic57@gmail.com
+        isAuthenticatedUser: true
+        kind: drive#user
+        permissionId: '18283827943184681594'
+        picture: {url: 'https://lh3.googleusercontent.com/a/ACg8ocJ736_X-aVg7wPDhc252cCgda8ht7DHFQyykeDBORKE1gaICYtD=s64'}
+      parents:
+      - {id: 1VFpVujgn_w2gfwizWD12CU_gWFlaD06_, isRoot: false, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/1VFpVujgn_w2gfwizWD12CU_gWFlaD06_', selfLink: 'https://www.googleapis.com/drive/v2/files/1E6fzPDB0y3VMl0uiDKT89fDY17vZq5X9lwH2QfN6Dpk/parents/1VFpVujgn_w2gfwizWD12CU_gWFlaD06_'}
+      python_name: bibliotekaradnaverzija
+      quotaBytesUsed: '10786'
+      selfLink: https://www.googleapis.com/drive/v2/files/1E6fzPDB0y3VMl0uiDKT89fDY17vZq5X9lwH2QfN6Dpk
+      shared: false
+      spaces: [drive]
+      thumbnailLink: https://lh3.googleusercontent.com/drive-storage/AJQWtBN11v8FMzRhZ-g4BoeQS9ct4wOjYHRoPocfzl9e2SYN1yMFT_uk2m1qY29vpfwS2k-M2Sk_jqADw-WsA3Uyh4U6egV_I2WR1AzuajsIInSh5EqKhguOv-OK7k02Sg=s220
+      title: BIBLIOTEKArADNAvERZIJA
+      userPermission: {etag: '"yz0Ghz8PkW5qq6-rrpNMSVBtRBE"', id: me, kind: drive#permission, pendingOwner: false, role: owner, selfLink: 'https://www.googleapis.com/drive/v2/files/1E6fzPDB0y3VMl0uiDKT89fDY17vZq5X9lwH2QfN6Dpk/permissions/me', type: user}
+      version: '7'
+      writersCanShare: true
+  server_config: {}
+  source: /runtime/services/google.yml
+- client_config: {allow_signup: false, confirm_email: true, enable_automatically: true, use_email: true}
+  server_config: {user_table: users}
+  source: /runtime/services/anvil/users.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/email.yml
+startup: {module: Pocetna, type: form}
+startup_form: null
+uplink_visible: true
