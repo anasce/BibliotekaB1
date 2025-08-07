@@ -28,9 +28,9 @@ def lookup_cover(isbn):
 def search_records(tip_string,search_string):
   search_string = search_string.lower()
   if tip_string=="naslov":
-    return [r for r in app_tables.knjige.search(tables.order_by("Креирано", ascending=False))
+    return [r for r in app_tables.knjige.search(tables.order_by("Kreirano", ascending=False))
     #return [r for r in list
-            if search_string in r['Наслов'].lower()]
+            if search_string in r['Naslov'].lower()]
   elif  tip_string=="autor": 
        return [r for r in app_tables.knjige.search(tables.order_by("Креирано", ascending=False))
             if search_string in r['Аутори'].lower()]
@@ -53,7 +53,7 @@ def search_records(tip_string,search_string):
 def uzmi_knjige():
     # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
     #return list(app_tables.knjige.search(tables.order_by("Created", ascending=False)))
-    return list(app_tables.knjige.search(tables.order_by("Креирано", ascending=False)))
+    return list(app_tables.knjige.search(tables.order_by("Kreirano", ascending=False)))
 
 
 
@@ -84,7 +84,7 @@ def izmjena_knjiga(knjiga, knjiga_dict):
 @anvil.server.callable
 def uzmi_knjige_odDo(broj1,broj2):
     # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
-    lista_а=list(app_tables.knjige.search(tables.order_by("Креирано", ascending=False)))
+    lista_а=list(app_tables.knjige.search(tables.order_by("Kreirano", ascending=False)))
     #print(list(lista_а))
     lista_а_p=[]
     br=1

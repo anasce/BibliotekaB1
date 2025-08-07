@@ -6,7 +6,7 @@ components:
       properties: {font_size: 16, text: 'Naslov:'}
       type: Label
     - data_bindings:
-      - {code: 'self.item[''Наслов'']', property: text, writeback: true}
+      - {code: 'self.item[''Naslov'']', property: text, writeback: true}
       layout_properties: {grid_position: 'BKAMEA,BBNPWM'}
       name: t_naslov
       properties: {}
@@ -16,7 +16,7 @@ components:
       properties: {font_size: 16, text: 'Autori:'}
       type: Label
     - data_bindings:
-      - {code: 'self.item[''Аутори'']', property: text, writeback: true}
+      - {code: 'self.item[''Autori'']', property: text, writeback: true}
       layout_properties: {grid_position: 'LBICHG,WZRZED'}
       name: t_autori
       properties: {}
@@ -36,7 +36,7 @@ components:
       properties: {}
       type: TextBox
     - data_bindings:
-      - {code: 'self.item[''Година'']', property: text, writeback: true}
+      - {code: 'self.item[''Godina'']', property: text, writeback: true}
       layout_properties: {grid_position: 'PWFTIZ,IIJSAQ XXYJCR,COISXS'}
       name: t_godina
       properties: {}
@@ -70,43 +70,43 @@ components:
       properties: {font_size: 16, text: 'Napomena2:'}
       type: Label
     - data_bindings:
-      - {code: 'self.item[''Издавач'']', property: text, writeback: true}
+      - {code: 'self.item[''Izdavac'']', property: text, writeback: true}
       layout_properties: {grid_position: 'FVFJQH,CZPAQY YIZBCM,OLCSGW'}
       name: t_izdavac
       properties: {}
       type: TextBox
     - data_bindings:
-      - {code: 'self.item[''Задужење'']', property: text, writeback: true}
+      - {code: 'self.item[''Zaduzenje'']', property: text, writeback: true}
       layout_properties: {grid_position: 'FVFJQH,CZPAQY YUNJRA,UMEPNP'}
       name: t_zaduzenje
       properties: {}
       type: TextBox
     - data_bindings:
-      - {code: 'self.item[''Полица'']', property: text, writeback: true}
+      - {code: 'self.item[''Polica'']', property: text, writeback: true}
       layout_properties: {grid_position: 'FVFJQH,CZPAQY LZTCDU,WUYADR'}
       name: t_polica
       properties: {}
       type: TextBox
     - data_bindings:
-      - {code: 'self.item[''Количина'']', property: text, writeback: true}
+      - {code: 'self.item[''Kolicina'']', property: text, writeback: true}
       layout_properties: {grid_position: 'FVFJQH,CZPAQY GHWTCI,BDCMXW'}
       name: t_kolicina
       properties: {}
       type: TextBox
     - data_bindings:
-      - {code: 'self.item[''Рбр'']', property: text, writeback: true}
+      - {code: 'self.item[''Rbr'']', property: text, writeback: true}
       layout_properties: {grid_position: 'FVFJQH,CZPAQY WCMJJU,XBQVNS'}
       name: t_rbr
       properties: {}
       type: TextBox
     - data_bindings:
-      - {code: 'self.item[''Напомена1'']', property: text, writeback: true}
+      - {code: 'self.item[''Napomena1'']', property: text, writeback: true}
       layout_properties: {grid_position: 'FVFJQH,CZPAQY NDAVLW,XVPHRX'}
       name: t_napomena1
       properties: {}
       type: TextBox
     - data_bindings:
-      - {code: 'self.item[''Напомена2'']', property: text, writeback: true}
+      - {code: 'self.item[''Napomena2'']', property: text, writeback: true}
       layout_properties: {grid_position: 'FVFJQH,CZPAQY IGWGBQ,WVIRKR'}
       name: t_napomena2
       properties: {}

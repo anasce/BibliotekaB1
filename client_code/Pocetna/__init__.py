@@ -76,8 +76,8 @@ class Pocetna(PocetnaTemplate):
     r = choice(anvil.server.call('uzmi_knjige'))
     print(r)
     #alert(self.worksheet.rows)
-    self.book_title.text = f" {r['Наслов']}"
-    self.book_author.text = f" {r['Аутори']}"
+    self.book_title.text = f" {r['Naslov']}"
+    self.book_author.text = f" {r['Autori']}"
     self.repeating_panel_1.visible = False
     if r['ISBN'] and r['ISBN']!=" "  and r['ISBN']!="":
       self.cover_image.source = anvil.server.call('lookup_cover', r['ISBN'])

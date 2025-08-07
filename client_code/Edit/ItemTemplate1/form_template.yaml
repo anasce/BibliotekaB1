@@ -1,7 +1,7 @@
 components:
 - components:
   - data_bindings:
-    - {code: 'self.item[''Наслов'']', property: text, writeback: false}
+    - {code: 'self.item[''Naslov'']', property: text, writeback: false}
     layout_properties: {grid_position: 'URCYIJ,CPKADM'}
     name: l_naslov
     properties: {}
@@ -13,55 +13,55 @@ components:
     properties: {foreground: 'theme:Primary 700'}
     type: Label
   - data_bindings:
-    - {code: 'self.item[''Аутори'']', property: text, writeback: false}
+    - {code: 'self.item[''Autori'']', property: text, writeback: false}
     layout_properties: {grid_position: 'IPJNAG,EMWPUM'}
     name: l_autori
     properties: {foreground: 'theme:Primary 700'}
     type: Label
   - data_bindings:
-    - {code: 'self.item[''Издавач'']', property: text, writeback: false}
+    - {code: 'self.item[''Izdavac'']', property: text, writeback: false}
     layout_properties: {grid_position: 'CCNFYK,HDTJEJ'}
     name: l_izdavac
     properties: {foreground: 'theme:Primary 700'}
     type: Label
   - data_bindings:
-    - {code: 'self.item[''Година'']', property: text, writeback: false}
+    - {code: 'self.item[''Godina'']', property: text, writeback: false}
     layout_properties: {grid_position: 'ZIKHCS,HPEFIB'}
     name: l_godina
     properties: {foreground: 'theme:Primary 700'}
     type: Label
   - data_bindings:
-    - {code: 'self.item[''Полица'']', property: text, writeback: false}
+    - {code: 'self.item[''Polica'']', property: text, writeback: false}
     layout_properties: {grid_position: 'OVOJIJ,PXBSBY'}
     name: l_polica
     properties: {foreground: 'theme:Primary 700'}
     type: Label
   - data_bindings:
-    - {code: 'self.item[''Задужење'']', property: text, writeback: false}
+    - {code: 'self.item[''Zaduzenje'']', property: text, writeback: false}
     layout_properties: {grid_position: 'KQMZHJ,OWSKSH'}
     name: l_zaduzenje
     properties: {foreground: 'theme:Primary 700'}
     type: Label
   - data_bindings:
-    - {code: 'self.item[''Количина'']', property: text, writeback: false}
+    - {code: 'self.item[''Kolicina'']', property: text, writeback: false}
     layout_properties: {grid_position: 'LNTNRN,CSTZVH'}
     name: l_kolicina
     properties: {foreground: 'theme:Primary 700'}
     type: Label
   - data_bindings:
-    - {code: 'self.item[''Напомена1'']', property: text, writeback: false}
+    - {code: 'self.item[''Napomena1'']', property: text, writeback: false}
     layout_properties: {grid_position: 'KMRHHC,LLZNAO'}
     name: l_napomena1
     properties: {foreground: 'theme:Primary 700'}
     type: Label
   - data_bindings:
-    - {code: 'self.item[''Рбр'']', property: text, writeback: false}
+    - {code: 'self.item[''Rbr'']', property: text, writeback: false}
     layout_properties: {grid_position: 'AHQQGF,QYRHMB'}
     name: l_rbr
     properties: {foreground: 'theme:Primary 700'}
     type: Label
   - data_bindings:
-    - {code: 'self.item[''Напомена2'']', property: text, writeback: false}
+    - {code: 'self.item[''Napomena2'']', property: text, writeback: false}
     layout_properties: {grid_position: 'BDUQVI,SWSUVP'}
     name: l_napomena2
     properties: {foreground: 'theme:Primary 700'}
