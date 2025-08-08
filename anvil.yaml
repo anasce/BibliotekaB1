@@ -43,9 +43,6 @@ db_schema:
     - admin_ui: {order: 8, width: 200}
       name: Rbr
       type: string
-    - admin_ui: {order: 12, width: 200}
-      name: napomena1
-      type: string
     server: full
     title: knjige
   users:
