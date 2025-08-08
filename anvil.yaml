@@ -72,8 +72,8 @@ db_schema:
     server: full
     title: Users
 dependencies:
-- dep_id: dep_ykcpnvdg9luv6
-  resolution_hints: {app_id: 4FGAXQOIJKTU36VN, name: BibliotekaB prijava, package_name: custom_signup}
+- dep_id: dep_6vd0kzru2g4mjj
+  resolution_hints: {app_id: KR3PASUCO6PLK5L4, name: BibliotekaB1prijava, package_name: custom_signup}
   version: {branch: master}
 metadata: {description: Biblioteka, logo_img: 'asset:book.gif', title: Biblioteka}
 name: ' BibliotekaB1'
