@@ -65,7 +65,7 @@ class Pocetna(PocetnaTemplate):
     
 
 
-  def button_1_click(self, **event_args):
+  def button_1_clickR(self, **event_args):
     """This method is called when the button is clicked"""
     self.cover_image.visible = False
     self.loading_image.visible = True
@@ -83,7 +83,30 @@ class Pocetna(PocetnaTemplate):
       self.cover_image.source = anvil.server.call('lookup_cover', r['ISBN'])
       self.loading_image.visible = False
       self.cover_image.visible = True
-    
+  def button_1_click(self, **event_args):
+      
+    self.cover_image.visible = False
+    self.loading_image.visible = True
+    self.book_title.visible = True
+    self.button_1_copy.text = "Druga slučajna knjiga?"
+    #print(self.worksheet.rows)
+    #r = choice(list(app_tables.knjige.search(tables.order_by("Креирано", ascending=False))))
+    #alert(anvil.server.call('uzmi_knjige'))
+    re=anvil.server.call('uzmi_knjige')
+    if re != []:  
+      r = choice(anvil.server.call('uzmi_knjige'))
+      print(r)
+      #alert(self.worksheet.rows)
+      self.book_title.text = f" {r['Naslov']}"
+      self.book_author.text = f" {r['Autori']}"
+      self.repeating_panel_1.visible = False
+      if r['ISBN'] and r['ISBN']!=" "  and r['ISBN']!="":
+           self.cover_image.source = anvil.server.call('lookup_cover', r['ISBN'])
+           self.loading_image.visible = False
+           self.cover_image.visible = True
+    else:
+       self.book_title.text = "Baza knjiga je prazna"
+       #self.book_author.text = f" {r['Autori']}"  
   def button_pretraga_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.repeating_panel_1.visible = True

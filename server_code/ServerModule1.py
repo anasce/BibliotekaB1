@@ -50,7 +50,7 @@ def search_records(tip_string,search_string):
        return [r for r in app_tables.knjige.search(tables.order_by("Kreirano", ascending=False))            
             if  r['Naslov'].lower().startswith(search_string)] 
 @anvil.server.callable
-def uzmi_knjige():
+def uzmi_knjigeR():
     # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
     #return list(app_tables.knjige.search(tables.order_by("Created", ascending=False)))
   try:
@@ -60,7 +60,16 @@ def uzmi_knjige():
     # Code to handle any exception that occurs in the try block
     print("An error occurred.")
     
-
+@anvil.server.callable
+def uzmi_knjige():
+  # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
+  #return list(app_tables.knjige.search(tables.order_by("Created", ascending=False)))
+  l=[]
+  try:
+    l=list(app_tables.knjige.search())
+  except :
+    pass
+  return l
 
 @anvil.server.callable
 def import_podataka(art_dict):
